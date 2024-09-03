@@ -143,9 +143,9 @@ fi
 
 SCAN_BUILD_COMMAND="$(command -v "scan-build$desired_version" 2> /dev/null)"
 
-if [ $build_arch = loongarch64 ]; then
-    CC="loongarch64-unknown-linux-gnu-gcc"
-    CXX="loongarch64-unknown-linux-gnu-g++"
-fi
+#if [ $build_arch = loongarch64 ]; then
+#    CC="loongarch64-unknown-linux-gnu-gcc"
+#    CXX="loongarch64-unknown-linux-gnu-g++"
+#fi
 
 export CC CXX LDFLAGS SCAN_BUILD_COMMAND
